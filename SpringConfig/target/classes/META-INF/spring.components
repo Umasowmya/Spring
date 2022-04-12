@@ -1,8 +1,0 @@
-#
-#Wed Apr 06 18:48:50 IST 2022
-classes.RandomFortuneService=org.springframework.stereotype.Component
-classes.RESTFortuneService=org.springframework.stereotype.Component
-classes.SportConfig=org.springframework.stereotype.Component
-classes.HappyFortuneService=org.springframework.stereotype.Component
-classes.DatabaseFortuneService=org.springframework.stereotype.Component
-classes.TennisCoach=org.springframework.stereotype.Component
