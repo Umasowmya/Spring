@@ -1,0 +1,15 @@
+#
+#Mon Apr 18 18:24:25 IST 2022
+classes.RandomFortuneService=org.springframework.stereotype.Component
+springdemo.aop.aspect.PerformAPIAnalytics=org.springframework.stereotype.Component
+classes.RESTFortuneService=org.springframework.stereotype.Component
+springdemo.dao.AccountDAO=org.springframework.stereotype.Component
+springdemo.aop.DemoConfig=org.springframework.stereotype.Component
+classes.HappyFortuneService=org.springframework.stereotype.Component
+springdemo.aop.aspect.LoginToCloud=org.springframework.stereotype.Component
+springdemo.dao.MembershipDAO=org.springframework.stereotype.Component
+springdemo.aop.aspect.MyDemoLoginAspect=org.springframework.stereotype.Component
+springdemo.aop.aspect.PointCutExpr=org.springframework.stereotype.Component
+classes.SportConfig=org.springframework.stereotype.Component
+classes.DatabaseFortuneService=org.springframework.stereotype.Component
+classes.TennisCoach=org.springframework.stereotype.Component
