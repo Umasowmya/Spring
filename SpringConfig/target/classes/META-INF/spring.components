@@ -1,8 +1,9 @@
 #
-#Mon Apr 18 18:24:25 IST 2022
+#Tue Apr 19 14:39:56 IST 2022
 classes.RandomFortuneService=org.springframework.stereotype.Component
 springdemo.aop.aspect.PerformAPIAnalytics=org.springframework.stereotype.Component
 classes.RESTFortuneService=org.springframework.stereotype.Component
+springdemo.dao.TrafficFortuneService=org.springframework.stereotype.Component
 springdemo.dao.AccountDAO=org.springframework.stereotype.Component
 springdemo.aop.DemoConfig=org.springframework.stereotype.Component
 classes.HappyFortuneService=org.springframework.stereotype.Component

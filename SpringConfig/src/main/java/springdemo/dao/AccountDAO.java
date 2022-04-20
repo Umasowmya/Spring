@@ -43,8 +43,12 @@ public class AccountDAO {
     }
 
 
-    public List<Account> findAccounts(){
+    public List<Account> findAccounts(boolean t){
 
+        if(t ==true)
+        {
+            throw new RuntimeException("No soup for you!!");
+        }
         List<Account> myAccounts = new ArrayList<>();
 
         Account a1 = new Account("Madhu","Platinum");

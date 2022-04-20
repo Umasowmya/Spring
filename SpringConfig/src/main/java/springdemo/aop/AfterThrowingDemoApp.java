@@ -5,7 +5,7 @@ import springdemo.dao.AccountDAO;
 
 import java.util.List;
 
-public class AfterReturningDemoApp {
+public class AfterThrowingDemoApp {
 
     public static void main(String[] args) {
 
@@ -16,11 +16,21 @@ public class AfterReturningDemoApp {
         accountDAO.setFname("Uma");
         accountDAO.setLname("Sowmya");
 
-        List<Account> r = accountDAO.findAccounts(false);
 
-        System.out.println(r);
+        List<Account> r = null;
+        try
+        {
+             boolean t = true;
+             accountDAO.findAccounts(t);
+             System.out.println(r);
+             context.close();
+        }
 
-        context.close();
+        catch(Exception e){
 
-    }
+            System.out.println("Exception is caught "+e);
+
+        }
+
+        }
 }

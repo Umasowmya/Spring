@@ -1,26 +1,27 @@
 package springdemo.aop;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 import springdemo.dao.AccountDAO;
+import springdemo.dao.TrafficFortuneService;
 
 import java.util.List;
 
-public class AfterReturningDemoApp {
+public class AroundDemoApp {
 
     public static void main(String[] args) {
 
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 
-        AccountDAO accountDAO = context.getBean("accountDAO",AccountDAO.class);
+        TrafficFortuneService t  = context.getBean("trafficFortuneService",TrafficFortuneService.class);
 
-        accountDAO.setFname("Uma");
-        accountDAO.setLname("Sowmya");
+        System.out.println("calling fortune");
 
-        List<Account> r = accountDAO.findAccounts(false);
+        String s = t.getFortune();
 
-        System.out.println(r);
+        System.out.println(s);
 
         context.close();
 
-    }
+        }
 }

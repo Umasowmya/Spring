@@ -1,3 +1,4 @@
+daao.CRMLoggingAspect=org.springframework.stereotype.Component
 daao.CustomerController=org.springframework.stereotype.Component
 daao.CustomerDAO=org.springframework.stereotype.Component
 daao.CustomerDAOImpl=org.springframework.stereotype.Component

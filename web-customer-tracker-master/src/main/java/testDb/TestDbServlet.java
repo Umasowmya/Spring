@@ -18,7 +18,7 @@ public class TestDbServlet extends HttpServlet {
        String user = "root";
        String pass = "Chandu@2601";
 
-       String url = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&serverTimeZone=UTC";
+       String url = "jdbc:mysql://localhost:3306/web_customer_tracker?allowPublicKeyRetrieval=true&useSSL=false&serverTimeZone=UTC";
 
        String driver = "com.mysql.cj.jdbc.Driver";
         Connection connection;
@@ -28,8 +28,6 @@ public class TestDbServlet extends HttpServlet {
            Class.forName(driver);
            connection=DriverManager.getConnection(url,user,pass);
            out.println("connecting to db : "+url);
-
-
 
            out.println("Success:!!");
 
